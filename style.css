@@ -113,6 +113,7 @@ body{
     margin-top: 22px;
     border-radius: 25px;
     transition: transform 0.5s ease;
+    transform: scale(1.08);
 }
 
 .explore h3{
@@ -124,6 +125,7 @@ body{
     height: 45px;
     width: 154px;
     box-shadow: 3px 5px 2px rgb(52, 56, 70);
+    transform: scale(1.08);
 }
   
 
@@ -284,6 +286,40 @@ input {
     margin-bottom: 4px;
 }
 
+.footer1 {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 35px;
+    background-color: black;
+}
+
+.footer1 p{
+    color: white;
+}
+
+
+.footer-content {
+    text-align: center;
+    padding: 20px; 
+}
+
+.footer-title {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+.footer1 h2{
+    color: white;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    font-weight: 300; 
+}
 
  
 @media (max-width:767px){
@@ -302,9 +338,9 @@ input {
         padding: 10px;
     }
 
-    .plate img{
-        height: 20rem;
-        width: 20rem;
+    .plate img {
+        height: 18rem;
+        width: 18rem;
     }
 
     .mid{
@@ -394,7 +430,63 @@ input {
     }
 
     .logo1 img {
-        width: 76px;
-        height: 44px;
+        width: 50px;
+        height: 30px;
+    }
+
+    .footer {
+        display: flex;
+        width: 96%;
+        margin: auto;
+        gap: .7rem;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 35px;
+    }
+    .footer h2 {
+        color: white;
+        font-size: x-small;
+    }
+
+    .option {
+        font-size: 25px;
+    }
+
+    .mainLink h1 {
+        font-size: 12px;
+        margin-bottom: 1px;
+    }
+
+    .mainLink a {
+        color: black;
+        text-decoration: none;
+        margin-bottom: 2px;
+        color: dimgray;
+        font-size: 9px;
+    }
+
+    input {
+        padding: 1px;
+        border: 1px solid #ccc;
+        width: 100px;
+    }
+
+    input::placeholder {
+        font-size: 8px;
+        opacity: 0.7; /* Optional: Adjust placeholder opacity */
+    }
+
+    .wrap1 {
+        height: 206px;
+        width: 100%;
+        margin-top: 25px;
+        background: #FFF0DB;
+    }
+    .social-icons {
+        gap: .4rem;
+    }
+    .social-icons img {
+        height: 16px;
+        width: 16px;
     }
 }
