@@ -42,10 +42,6 @@ body{
     font-size: 32px;
 }
 
-/* .logo img{
-    width: 40px;
-    height: 40px;
-} */
 
 .hero{
     /* align-items: center; */
@@ -223,6 +219,73 @@ body{
     grid-area: I7;
  }
 
+ .footer {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 35px;
+}
+
+ .wrap1{
+    height: 320px;
+    width: 100%;
+    margin-top: 25px;
+    background: #FFF0DB;
+ }
+
+ .mainLink {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mainLink a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: dimgray;
+    font-size: 15px;
+}
+
+.mainLink a:hover {
+    cursor: pointer;
+}
+
+input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    width: 263px;
+}
+
+.social-icons{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-icons img{
+    height: 20px;
+    width: 20px;
+}
+
+.mainLink h1 {
+    color: dimgray;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    margin-bottom: 4px;
+}
+
+
+ 
 @media (max-width:767px){
     .plate{
         width: 100%;
@@ -328,5 +391,10 @@ body{
 
     .content p {
         font-size: .7rem;
+    }
+
+    .logo1 img {
+        width: 76px;
+        height: 44px;
     }
 }
