@@ -21,6 +21,7 @@ body{
     top: 0;
     margin-bottom: 32px;
     padding: 10px;
+    z-index: 50;
 }
 
 /* header.... */
@@ -31,6 +32,7 @@ body{
     justify-content: space-between;
     margin: auto;
     align-items: center;
+    
 }
 
 .option {
@@ -105,7 +107,6 @@ body{
     font-size: 5rem;
     font-weight: BOLDER;
     FONT-FAMILY: 'ROBOTO';
-    BORDER: px;
 }
 
 .explore {
@@ -126,9 +127,9 @@ body{
     border: 1px solid black;
     height: 45px;
     width: 154px;
-    transform: scale(1.08);
-    box-shadow: 3px 5px 5px rgb(52, 56, 70);
+    box-shadow: 3px 5px 2px rgb(52, 56, 70);
 }
+  
 
 .disVoucher {
     display: flex;
@@ -167,6 +168,60 @@ body{
     font-weight: 500;
 }
 
+.gallery{
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+           "I1 I1 I2 I3"
+           "I1 I1 I2 I7"
+           "I4 I5 I6 I7";
+}
+
+.galImage{
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.galImage:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.08);
+}
+
+.galImage1:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.08);
+}
+
+.imag1{
+   grid-area: I1;
+}
+.imag2{
+    grid-area: I2;
+ }
+
+ .imag3{
+    grid-area: I3;
+ }
+
+ .imag4{
+    grid-area: I4;
+ }
+
+ .imag5{
+    grid-area: I5;
+ }
+
+ .imag6{
+    grid-area: I6;
+ }
+
+ .imag7{
+    grid-area: I7;
+ }
 
 @media (max-width:767px){
     .plate{
@@ -199,7 +254,79 @@ body{
     .item{
         max-width: 100%;
         display: flex;
-        gap: 0.2rem;
+        gap: 1.2rem;
         align-items: center;
+    }
+
+    .delicious {
+        LINE-HEIGHT: 3.5REM;
+        font-size: 3rem;
+        font-weight: 600;
+        FONT-FAMILY: 'ROBOTO';
+    }
+
+    .wrapper {
+        width: 84%;
+    }
+
+    .mid{
+        display: flex;
+        /* margin-left: 45px; */
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .coupon {
+        background: #149F39;
+        width: 150px;
+        height: 25px;
+        margin-bottom: 13px;
+        margin-left: 38px;
+        padding: 7px 0px 7px 15px;
+    }
+
+    .coupon h2 {
+        font-size: 10px;
+        font-weight: 400;
+        color: white;
+    }
+
+    .explore {
+        height: 45px;
+        width: 154px;
+        background: #FFC066;
+        padding: 11px 11px 11px 20px;
+        margin-top: 22px;
+        margin-left: 38px;
+        border-radius: 25px;
+        transition: transform 0.5s ease;
+    }
+    
+    .explore h3{
+        cursor: pointer;
+        color: white;
+    }
+
+    .disVoucher {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .content h3 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .content p {
+        font-size: .7rem;
     }
 }
